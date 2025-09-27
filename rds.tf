@@ -6,11 +6,11 @@ locals {
 }
 
 resource "aws_db_subnet_group" "rds_subnets" {
-  name       = "fastfood-rds-subnet-public-group"
+  name       = "hackaton-rds-subnet-public-group"
   subnet_ids = values(local.subnet_id_map_public_only)
 
   tags = {
-    Name = "fastfood-rds-subnet-public-group"
+    Name = "hackaton-rds-subnet-public-group"
   }
 }
 
