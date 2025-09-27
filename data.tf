@@ -1,14 +1,14 @@
 data "aws_subnet" "public_1" {
   filter {
     name   = "tag:Name"
-    values = ["hackaton-vpc-1"]
+    values = ["hackaton-public-1"]
   }
 }
 
 data "aws_subnet" "public_2" {
   filter {
     name   = "tag:Name"
-    values = ["hackaton-vpc-2"]
+    values = ["hackaton-public-2"]
   }
 }
 
